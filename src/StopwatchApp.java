@@ -65,14 +65,4 @@ public class StopwatchApp extends JFrame {
         String time = String.format("%02d:%02d:%02d.%03d", hours, minutes, seconds, milliseconds);
         timeLabel.setText(time);
     }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(new Runnable() {
-            @Override
-            public void run() {
-                StopwatchApp app = new StopwatchApp();
-                app.setVisible(true);
-            }
-        });
-    }
 }
